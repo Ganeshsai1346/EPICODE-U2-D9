@@ -1,0 +1,759 @@
+<!-- @format -->
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap Music Website</title>
+    <style>
+      .jumbotron {
+        color: rgb(3, 21, 4);
+        background-image: url(/jumbotronmusic.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+      }
+      .text {
+        opacity: 1;
+      }
+      .album-tapestry {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .hot-badge {
+        position: absolute;
+        left: 0rem;
+        top: 0;
+        width: 30px;
+        height: 25px;
+        background-color: transparent;
+      }
+      .fadeIn {
+        animation: fade-in 3s 1s backwards;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .btn:hover {
+        box-shadow: 6px 5px 5px rgb(97, 92, 92);
+      }
+      .squared {
+        width: 260px;
+        height: 260px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+      <a class="navbar-brand" href="#">Popify</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#homeOne"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#favouriteOne">My Favourites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Top 5</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#albumReviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#favMusician">Fav. Musicians</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <section id="add">
+      <div class="container mt-5">
+        <div class="jumbotron fadeIn">
+          <div class="text">
+            <h1 class="display-4">Popify</h1>
+            <p class="lead">BEST MUSIC EXPERIENCE</p>
+            <hr class="my-4" />
+            <li>Best deals!</li>
+            <li>Comfortable buses with AC/DVD and friendly drivers</li>
+            <li>Best accommodation to feel at home</li>
+            <li>Great trip leaders with a lot of responsibility!​</li>
+            <li>Amazing destinations!</li>
+            <li>We are experts in what we do!/</li>
+            <a class="btn btn-primary btn-lg mt-3" href="#" role="button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="homeOne">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 mb-5">
+            <div class="card">
+              <img
+                src="https://ringtonedownload.best/wp-content/uploads/2022/04/Unstoppable-Ringtone-download-300x300.webp"
+                class="card-img-top"
+                alt="Play Unstoppable"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Unstoppable</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card">
+              <img
+                src="https://i0.wp.com/Jesusful.com/wp-content/uploads/2022/02/Ellie-Goulding-Love-Me-Like-You-Do-Mp3-Download-Lyrics.png?resize=300%2C300&ssl=1"
+                class="card-img-top"
+                alt="Play Unstoppable"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Love me like you do</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card">
+              <img src="/18.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <div class="card-body">
+                <h5 class="card-title">Unstoppable</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card">
+              <img src="/2.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <div class="card-body">
+                <h5 class="card-title">Unstoppable</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container d-flex justify-content-center">
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <div class="row no-gutters">
+                <img src="/21.jpg" class="col-6" alt="Play Unstoppable" />
+                <img src="/22.jpg" class="col-6" alt="Play Unstoppable" />
+                <img src="/23.jpg" class="col-6" alt="Play Unstoppable" />
+                <img src="/10.jpg" class="col-6" alt="Play Unstoppable" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">My favourites</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="favouriteOne">
+      <h3 class="text-center text-success">Favourites section</h3>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5">
+            <div class="card">
+              <img src="/12.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <img
+                src="/PngItem_405320.png"
+                class="hot-badge"
+                alt="hot-badge"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Unstoppable</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5">
+            <div class="card">
+              <img src="/10.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <img
+                src="/PngItem_405320.png"
+                class="hot-badge"
+                alt="hot-badge"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Unstoppable</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5">
+            <div class="card">
+              <img src="/15.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <img
+                src="/PngItem_405320.png"
+                class="hot-badge"
+                alt="hot-badge"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Unstoppable</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5">
+            <div class="card">
+              <img src="/16.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <img
+                src="/PngItem_405320.png"
+                class="hot-badge"
+                alt="hot-badge"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Unstoppable</h5>
+                <p class="card-text">
+                  Artist : Sia <br />
+                  Genre : Pop <br />
+                  Duration : 3 min 37 sec
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="albumReviews">
+      <h3 class="text-center text-success">Reviews</h3>
+
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="col-12 mb-5">
+            <div class="card">
+              <img
+                src="https://i1.sndcdn.com/artworks-000569715155-8aqhqv-t500x500.jpg"
+                class="card-img-top"
+                alt="Play Unstoppable"
+                width="300"
+                height="300"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Lovely (Billie Eilish and Khalid song)
+                </h5>
+                <p class="card-text">
+                  Artist : Billie Eilish, Khalid <br />
+                  Genre : Chamber pop <br />
+                  Duration : 3 min 20 sec <br />
+                  Review : Great track. The lyrics are short and sweet.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=V1Pl8CzNzCw"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="trackList">
+      <h3 class="text-center text-success">Track list</h3>
+      <div class="container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Track List</th>
+              <th scope="col">Artist</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Year</th>
+              <th scope="col">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="recipient-name" class="remove">
+              <th scope="row">1</th>
+              <td>Unstoppable</td>
+              <td>Sia</td>
+              <td>3:20</td>
+              <td id="recipient-name">2016</td>
+              <td>
+                <button
+                  onclick="removeTrack()"
+                  type="button"
+                  class="btn btn-primary"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+            <tr class="remove">
+              <th scope="row">2</th>
+              <td>Lovely</td>
+              <td>Billie Eilish, Khalid</td>
+              <td>3:30</td>
+              <td>2017</td>
+              <td>
+                <button
+                  onclick="removeTrack()"
+                  type="button"
+                  class="btn btn-primary"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+            <tr class="remove">
+              <th scope="row">3</th>
+              <td>Despacito</td>
+              <td>Justin Bieber</td>
+              <td>3:00</td>
+              <td>2019</td>
+              <td>
+                <button
+                  onclick="removeTrack()"
+                  type="button"
+                  class="btn btn-primary"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          data-whatever="@getbootstrap"
+        >
+          Add New Track
+        </button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Track</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row mx-3">
+                  <div class="form-group pr-2">
+                    <label
+                      for="recipient-name"
+                      id="recipient-name"
+                      onclick="addNewTrack()"
+                      class="col-form-label"
+                      >Track number:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="recipient-name"
+                    />
+                  </div>
+                  <div class="form-group pr-2">
+                    <label for="recipient-name" class="col-form-label"
+                      >Track title:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="recipient-name"
+                    />
+                  </div>
+                  <div class="form-group pr-2">
+                    <label for="recipient-name" class="col-form-label"
+                      >Artist Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="recipient-name"
+                    />
+                  </div>
+                  <div class="form-group pr-2">
+                    <label for="recipient-name" class="col-form-label"
+                      >Track duration:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="recipient-name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  onclick="addNewTrack()"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Add
+                </button>
+                <button type="button" class="btn btn-primary">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="albumReviews">
+      <h3 class="text-center text-success">Worst list</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-3 mb-5">
+            <div class="card">
+              <img src="/23.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Lovely (Billie Eilish and Khalid song)
+                </h5>
+                <p class="card-text">
+                  Artist : Billie Eilish, Khalid <br />
+                  Genre : Chamber pop <br />
+                  Duration : 3 min 20 sec <br />
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=V1Pl8CzNzCw"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card">
+              <img src="/22.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Lovely (Billie Eilish and Khalid song)
+                </h5>
+                <p class="card-text">
+                  Artist : Billie Eilish, Khalid <br />
+                  Genre : Chamber pop <br />
+                  Duration : 3 min 20 sec <br />
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=V1Pl8CzNzCw"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card">
+              <img src="/21.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Lovely (Billie Eilish and Khalid song)
+                </h5>
+                <p class="card-text">
+                  Artist : Billie Eilish, Khalid <br />
+                  Genre : Chamber pop <br />
+                  Duration : 3 min 20 sec <br />
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=V1Pl8CzNzCw"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card">
+              <img src="/2.jpg" class="card-img-top" alt="Play Unstoppable" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Lovely (Billie Eilish and Khalid song)
+                </h5>
+                <p class="card-text">
+                  Artist : Billie Eilish, Khalid <br />
+                  Genre : Chamber pop <br />
+                  Duration : 3 min 20 sec <br />
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=V1Pl8CzNzCw"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Play now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="favMusician">
+      <p
+        class="text-center bg-primary text-white font-weight-bolder text-uppercase text-large"
+      >
+        Favourite Musicians
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 mb-5">
+            <div class="card">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpZFWekfPmInDiN1YaiEve8aj68Z9pj6q0UyYbCkxJ543L6mtP"
+                width="100"
+                height="550"
+                class="card-img-top"
+                alt="Play Unstoppable"
+              />
+              <div class="card-body">
+                <h5 class="card-title">A. R. Rahman</h5>
+
+                <a
+                  href="https://en.wikipedia.org/wiki/A._R._Rahman"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 mb-5">
+            <div class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/26/Ilaiyaraaja_at_Merku_Thodarchi_Malai_Press_Meet.jpg"
+                class="card-img-top"
+                alt="Play Unstoppable"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ilayaraja</h5>
+
+                <a
+                  href="https://en.wikipedia.org/wiki/Ilaiyaraaja"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <p
+        class="text-center bg-primary text-white font-weight-bolder text-uppercase text-large"
+      >
+        Tapestry
+      </p>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 album-tapestry">
+            <img src="/1.jpg" class="img-fluid squared" />
+            <img src="/2.jpg" class="img-fluid squared" />
+            <img src="/3.jpg" class="img-fluid squared" />
+            <img src="/4.jpg" class="img-fluid squared" />
+            <img src="/5.jpg" class="img-fluid squared" />
+            <img src="/6.jpg" class="img-fluid squared" />
+            <img src="/7.jpg" class="img-fluid squared" />
+            <img src="/4.jpg" class="img-fluid squared" />
+            <img src="/9.jpg" class="img-fluid squared" />
+            <img src="/10.jpg" class="img-fluid squared" />
+            <img src="/11.jpg" class="img-fluid squared" />
+            <img src="/12.jpg" class="img-fluid squared" />
+            <img src="/13.jpg" class="img-fluid squared" />
+            <img src="/14.jpg" class="img-fluid squared" />
+            <img src="/15.jpg" class="img-fluid squared" />
+            <img src="/16.jpg" class="img-fluid squared" />
+            <img src="/17.jpg" class="img-fluid squared" />
+            <img src="/18.jpg" class="img-fluid squared" />
+            <img src="/19.jpg" class="img-fluid squared" />
+            <img src="/20.jpg" class="img-fluid squared" />
+            <img src="/21.jpg" class="img-fluid squared" />
+            <img src="/22.jpg" class="img-fluid squared" />
+            <img src="/23.jpg" class="img-fluid squared" />
+            <img src="/24.jpg" class="img-fluid squared" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>asfgyujhsdfjkndfhjkl</div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const removeTrack = function () {
+        const tracks = document.querySelector(".remove");
+        tracks.remove();
+      };
+
+      const addNewTrack = function () {
+        let addTrack = document.getElementById("recipient-name").value;
+        let tdItem = document.querySelector("tr");
+        let newTrack = document.createElement("td");
+        newTrack.innerText = addTrack;
+        tdItem.appendChild(newTrack);
+      };
+    </script>
+  </body>
+</html>
